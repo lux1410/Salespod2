@@ -16,3 +16,6 @@ ToDo:
 
 - Using AR, show mark about object you are pointing at while taking photo and use that object's name as
   default value for "Photo name" input dialog (one that is shown before uploading to S3)
+
+
+ This app is tested on iPhone 3gs with ios 5.1.1
