@@ -22,10 +22,13 @@ ToDo:
 
 Before compiling you need to get and enter:
 Google places 
+
 kGOOGLE_API_KEY @"YOUR_GOOGLE_API_KEY"  in MapView2Controller.h
 
 Amazon S3
+
 ACCESS_KEY_ID   @"YOUR_ACCES_KEY"
+
 SECRET_KEY      @"YOUR_SECRET_KEY" in MapView2Controller.m
 
  
