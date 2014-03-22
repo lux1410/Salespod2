@@ -429,8 +429,14 @@
     // Convert the image to JPEG data.
     self.currentimageData = UIImageJPEGRepresentation(image, 1.0);
     
-    UIImage *jpg=[UIImage imageWithData:self.currentimageData];
-    UIImageWriteToSavedPhotosAlbum(jpg,nil,nil,nil);
+    
+    if (picker.sourceType==UIImagePickerControllerSourceTypeCamera)
+    {
+        UIImage *jpg=[UIImage imageWithData:self.currentimageData];
+        UIImageWriteToSavedPhotosAlbum(jpg,nil,nil,nil);
+        
+    }
+
     
    [picker dismissModalViewControllerAnimated:YES]; 
      
