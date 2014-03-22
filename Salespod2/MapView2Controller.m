@@ -13,8 +13,8 @@
 #import "ARMainViewController.h"
 #import <AWSRuntime/AWSRuntime.h>
 
-#define ACCESS_KEY_ID          @"AKIAIR2D7MHQJPUNTAJA"
-#define SECRET_KEY             @"JYMqcBOBSOJgBFeU9QCSDu+EiDGB+T8NWrHkbLfG"
+#define ACCESS_KEY_ID          @"YOUR_ACCES_KEY"
+#define SECRET_KEY             @"YOUR_SECRET_KEY"
 #define PICTURE_BUCKET         @"lux-bucket"
 
 

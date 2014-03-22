@@ -12,7 +12,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import <AWSS3/AWSS3.h>
 
-#define kGOOGLE_API_KEY @"AIzaSyAz0yDhIeSrMja55n5zv383PbJUfbeumEE"
+#define kGOOGLE_API_KEY @"YOUR_GOOGLE_API_KEY"
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 
 
