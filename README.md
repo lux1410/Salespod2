@@ -18,4 +18,15 @@ ToDo:
   default value for "Photo name" input dialog (one that is shown before uploading to S3)
 
 
+***NOTE***
+
+Before compiling you need to get and enter:
+Google places 
+kGOOGLE_API_KEY @"YOUR_GOOGLE_API_KEY"  in MapView2Controller.h
+
+Amazon S3
+ACCESS_KEY_ID   @"YOUR_ACCES_KEY"
+SECRET_KEY      @"YOUR_SECRET_KEY" in MapView2Controller.m
+
+ 
  This app is tested on iPhone 3gs with ios 5.1.1
