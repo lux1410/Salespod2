@@ -7,17 +7,40 @@
 //
 
 #import "AppDelegate.h"
+#import "MapView2Controller.h"
+#import <AWSRuntime/AWSRuntime.h>
+
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    
+    
+     
+     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+     // Override point for customization after application launch.
+     self.viewController = [[MapView2Controller alloc] initWithNibName:@"MapView2Controller" bundle:nil];
+     self.window.rootViewController = self.viewController;
+        
+    
+#ifdef DEBUG
+    [AmazonLogger verboseLogging];
+#else
+    [AmazonLogger turnLoggingOff];
+#endif
+    
+    [AmazonErrorHandler shouldNotThrowExceptions];
+    
     [self.window makeKeyAndVisible];
-    return YES;
-}
+
+    
+     return YES;
+
+    
+    
+    
+   }
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

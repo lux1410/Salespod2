@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+@class MapView2Controller;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property (strong, nonatomic) MapView2Controller *viewController;
 
 @end

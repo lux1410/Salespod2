@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F2819A018D11231004F4910 /* ARMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F28199E18D11231004F4910 /* ARMainViewController.m */; };
+		0F2819A118D11231004F4910 /* ARMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F28199F18D11231004F4910 /* ARMainViewController.xib */; };
+		0F2819AF18D114A4004F4910 /* ARCoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2819A418D114A4004F4910 /* ARCoordinate.m */; };
+		0F2819B018D114A4004F4910 /* ARGeoCoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2819A618D114A4004F4910 /* ARGeoCoordinate.m */; };
+		0F2819B118D114A4004F4910 /* ARKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2819A818D114A4004F4910 /* ARKit.m */; };
+		0F2819B218D114A4004F4910 /* AugmentedRealityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2819AC18D114A4004F4910 /* AugmentedRealityController.m */; };
+		0F2819B318D114A4004F4910 /* GEOLocations.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2819AE18D114A4004F4910 /* GEOLocations.m */; };
+		0F2819B518D11898004F4910 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2819B418D11898004F4910 /* QuartzCore.framework */; };
+		0F2819B718D118E0004F4910 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2819B618D118E0004F4910 /* AVFoundation.framework */; };
+		0F2819E918D12379004F4910 /* MarkerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2819E818D12378004F4910 /* MarkerView.m */; };
 		0FC83A8218CBE1340010186B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FC83A8118CBE1340010186B /* UIKit.framework */; };
 		0FC83A8418CBE1340010186B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FC83A8318CBE1340010186B /* Foundation.framework */; };
 		0FC83A8618CBE1340010186B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FC83A8518CBE1340010186B /* CoreGraphics.framework */; };
@@ -16,9 +26,43 @@
 		0FC83A9418CBE1340010186B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC83A9318CBE1340010186B /* Default.png */; };
 		0FC83A9618CBE1340010186B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC83A9518CBE1340010186B /* Default@2x.png */; };
 		0FC83A9818CBE1340010186B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC83A9718CBE1340010186B /* Default-568h@2x.png */; };
+		0FC83A9F18CBE1600010186B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FC83A9E18CBE1600010186B /* CoreLocation.framework */; };
+		0FC83AA118CBE16E0010186B /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FC83AA018CBE16E0010186B /* libsqlite3.dylib */; };
+		0FC83AA318CBE1770010186B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FC83AA218CBE1770010186B /* MapKit.framework */; };
+		0FC83AA618CBE1910010186B /* AWSRuntime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FC83AA418CBE1910010186B /* AWSRuntime.framework */; };
+		0FC83AA718CBE1910010186B /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FC83AA518CBE1910010186B /* AWSS3.framework */; };
+		0FC83AB018CBE35B0010186B /* MapView2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC83AAE18CBE35B0010186B /* MapView2Controller.m */; };
+		0FC83AB118CBE35B0010186B /* MapView2Controller.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FC83AAF18CBE35B0010186B /* MapView2Controller.xib */; };
+		0FC83AB418CBE4670010186B /* MapPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC83AB318CBE4670010186B /* MapPoint.m */; };
+		0FC83AB718CBE4760010186B /* LocalDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC83AB618CBE4760010186B /* LocalDB.m */; };
+		0FC83ABB18CBE5360010186B /* EditDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC83AB918CBE5360010186B /* EditDataViewController.m */; };
+		0FC83ABC18CBE5360010186B /* EditDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FC83ABA18CBE5360010186B /* EditDataViewController.xib */; };
+		0FC83AC118CBEADC0010186B /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC83ABD18CBEADC0010186B /* first.png */; };
+		0FC83AC218CBEADC0010186B /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC83ABE18CBEADC0010186B /* first@2x.png */; };
+		0FC83AC318CBEADC0010186B /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC83ABF18CBEADC0010186B /* second.png */; };
+		0FC83AC418CBEADC0010186B /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC83AC018CBEADC0010186B /* second@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F28199D18D11231004F4910 /* ARMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARMainViewController.h; sourceTree = "<group>"; };
+		0F28199E18D11231004F4910 /* ARMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARMainViewController.m; sourceTree = "<group>"; };
+		0F28199F18D11231004F4910 /* ARMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ARMainViewController.xib; sourceTree = "<group>"; };
+		0F2819A318D114A4004F4910 /* ARCoordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCoordinate.h; sourceTree = "<group>"; };
+		0F2819A418D114A4004F4910 /* ARCoordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARCoordinate.m; sourceTree = "<group>"; };
+		0F2819A518D114A4004F4910 /* ARGeoCoordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARGeoCoordinate.h; sourceTree = "<group>"; };
+		0F2819A618D114A4004F4910 /* ARGeoCoordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARGeoCoordinate.m; sourceTree = "<group>"; };
+		0F2819A718D114A4004F4910 /* ARKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARKit.h; sourceTree = "<group>"; };
+		0F2819A818D114A4004F4910 /* ARKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARKit.m; sourceTree = "<group>"; };
+		0F2819A918D114A4004F4910 /* ARLocationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARLocationDelegate.h; sourceTree = "<group>"; };
+		0F2819AA18D114A4004F4910 /* ARViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARViewProtocol.h; sourceTree = "<group>"; };
+		0F2819AB18D114A4004F4910 /* AugmentedRealityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AugmentedRealityController.h; sourceTree = "<group>"; };
+		0F2819AC18D114A4004F4910 /* AugmentedRealityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AugmentedRealityController.m; sourceTree = "<group>"; };
+		0F2819AD18D114A4004F4910 /* GEOLocations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEOLocations.h; sourceTree = "<group>"; };
+		0F2819AE18D114A4004F4910 /* GEOLocations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GEOLocations.m; sourceTree = "<group>"; };
+		0F2819B418D11898004F4910 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0F2819B618D118E0004F4910 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0F2819E718D12378004F4910 /* MarkerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkerView.h; sourceTree = "<group>"; };
+		0F2819E818D12378004F4910 /* MarkerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkerView.m; sourceTree = "<group>"; };
 		0FC83A7E18CBE1340010186B /* Salespod2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Salespod2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FC83A8118CBE1340010186B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0FC83A8318CBE1340010186B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -32,6 +76,25 @@
 		0FC83A9318CBE1340010186B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		0FC83A9518CBE1340010186B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		0FC83A9718CBE1340010186B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		0FC83A9E18CBE1600010186B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0FC83AA018CBE16E0010186B /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		0FC83AA218CBE1770010186B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		0FC83AA418CBE1910010186B /* AWSRuntime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSRuntime.framework; path = "../../Downloads/aws-ios-sdk-1.7.1/AWSRuntime.framework"; sourceTree = "<group>"; };
+		0FC83AA518CBE1910010186B /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSS3.framework; path = "../../Downloads/aws-ios-sdk-1.7.1/AWSS3.framework"; sourceTree = "<group>"; };
+		0FC83AAD18CBE35B0010186B /* MapView2Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView2Controller.h; sourceTree = "<group>"; };
+		0FC83AAE18CBE35B0010186B /* MapView2Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapView2Controller.m; sourceTree = "<group>"; };
+		0FC83AAF18CBE35B0010186B /* MapView2Controller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapView2Controller.xib; sourceTree = "<group>"; };
+		0FC83AB218CBE4670010186B /* MapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPoint.h; sourceTree = "<group>"; };
+		0FC83AB318CBE4670010186B /* MapPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPoint.m; sourceTree = "<group>"; };
+		0FC83AB518CBE4760010186B /* LocalDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalDB.h; sourceTree = "<group>"; };
+		0FC83AB618CBE4760010186B /* LocalDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalDB.m; sourceTree = "<group>"; };
+		0FC83AB818CBE5360010186B /* EditDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditDataViewController.h; sourceTree = "<group>"; };
+		0FC83AB918CBE5360010186B /* EditDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditDataViewController.m; sourceTree = "<group>"; };
+		0FC83ABA18CBE5360010186B /* EditDataViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditDataViewController.xib; sourceTree = "<group>"; };
+		0FC83ABD18CBEADC0010186B /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		0FC83ABE18CBEADC0010186B /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		0FC83ABF18CBEADC0010186B /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		0FC83AC018CBEADC0010186B /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +102,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F2819B718D118E0004F4910 /* AVFoundation.framework in Frameworks */,
+				0F2819B518D11898004F4910 /* QuartzCore.framework in Frameworks */,
+				0FC83AA618CBE1910010186B /* AWSRuntime.framework in Frameworks */,
+				0FC83AA718CBE1910010186B /* AWSS3.framework in Frameworks */,
+				0FC83AA318CBE1770010186B /* MapKit.framework in Frameworks */,
+				0FC83AA118CBE16E0010186B /* libsqlite3.dylib in Frameworks */,
+				0FC83A9F18CBE1600010186B /* CoreLocation.framework in Frameworks */,
 				0FC83A8218CBE1340010186B /* UIKit.framework in Frameworks */,
 				0FC83A8418CBE1340010186B /* Foundation.framework in Frameworks */,
 				0FC83A8618CBE1340010186B /* CoreGraphics.framework in Frameworks */,
@@ -48,9 +118,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F2819A218D114A4004F4910 /* ARKit */ = {
+			isa = PBXGroup;
+			children = (
+				0F2819A318D114A4004F4910 /* ARCoordinate.h */,
+				0F2819A418D114A4004F4910 /* ARCoordinate.m */,
+				0F2819A518D114A4004F4910 /* ARGeoCoordinate.h */,
+				0F2819A618D114A4004F4910 /* ARGeoCoordinate.m */,
+				0F2819A718D114A4004F4910 /* ARKit.h */,
+				0F2819A818D114A4004F4910 /* ARKit.m */,
+				0F2819A918D114A4004F4910 /* ARLocationDelegate.h */,
+				0F2819AA18D114A4004F4910 /* ARViewProtocol.h */,
+				0F2819AB18D114A4004F4910 /* AugmentedRealityController.h */,
+				0F2819AC18D114A4004F4910 /* AugmentedRealityController.m */,
+				0F2819AD18D114A4004F4910 /* GEOLocations.h */,
+				0F2819AE18D114A4004F4910 /* GEOLocations.m */,
+			);
+			path = ARKit;
+			sourceTree = "<group>";
+		};
 		0FC83A7518CBE1340010186B = {
 			isa = PBXGroup;
 			children = (
+				0F2819B618D118E0004F4910 /* AVFoundation.framework */,
+				0F2819B418D11898004F4910 /* QuartzCore.framework */,
+				0F2819A218D114A4004F4910 /* ARKit */,
+				0FC83AA418CBE1910010186B /* AWSRuntime.framework */,
+				0FC83AA518CBE1910010186B /* AWSS3.framework */,
+				0FC83AA218CBE1770010186B /* MapKit.framework */,
+				0FC83AA018CBE16E0010186B /* libsqlite3.dylib */,
+				0FC83A9E18CBE1600010186B /* CoreLocation.framework */,
 				0FC83A8718CBE1340010186B /* Salespod2 */,
 				0FC83A8018CBE1340010186B /* Frameworks */,
 				0FC83A7F18CBE1340010186B /* Products */,
@@ -78,9 +175,28 @@
 		0FC83A8718CBE1340010186B /* Salespod2 */ = {
 			isa = PBXGroup;
 			children = (
+				0F2819E718D12378004F4910 /* MarkerView.h */,
+				0F2819E818D12378004F4910 /* MarkerView.m */,
+				0FC83ABD18CBEADC0010186B /* first.png */,
+				0FC83ABE18CBEADC0010186B /* first@2x.png */,
+				0FC83ABF18CBEADC0010186B /* second.png */,
+				0FC83AC018CBEADC0010186B /* second@2x.png */,
+				0FC83AB518CBE4760010186B /* LocalDB.h */,
+				0FC83AB618CBE4760010186B /* LocalDB.m */,
+				0FC83AB218CBE4670010186B /* MapPoint.h */,
+				0FC83AB318CBE4670010186B /* MapPoint.m */,
 				0FC83A9018CBE1340010186B /* AppDelegate.h */,
 				0FC83A9118CBE1340010186B /* AppDelegate.m */,
 				0FC83A8818CBE1340010186B /* Supporting Files */,
+				0FC83AAD18CBE35B0010186B /* MapView2Controller.h */,
+				0FC83AAE18CBE35B0010186B /* MapView2Controller.m */,
+				0FC83AAF18CBE35B0010186B /* MapView2Controller.xib */,
+				0FC83AB818CBE5360010186B /* EditDataViewController.h */,
+				0FC83AB918CBE5360010186B /* EditDataViewController.m */,
+				0FC83ABA18CBE5360010186B /* EditDataViewController.xib */,
+				0F28199D18D11231004F4910 /* ARMainViewController.h */,
+				0F28199E18D11231004F4910 /* ARMainViewController.m */,
+				0F28199F18D11231004F4910 /* ARMainViewController.xib */,
 			);
 			path = Salespod2;
 			sourceTree = "<group>";
@@ -154,6 +270,13 @@
 				0FC83A9418CBE1340010186B /* Default.png in Resources */,
 				0FC83A9618CBE1340010186B /* Default@2x.png in Resources */,
 				0FC83A9818CBE1340010186B /* Default-568h@2x.png in Resources */,
+				0FC83AB118CBE35B0010186B /* MapView2Controller.xib in Resources */,
+				0FC83ABC18CBE5360010186B /* EditDataViewController.xib in Resources */,
+				0FC83AC118CBEADC0010186B /* first.png in Resources */,
+				0FC83AC218CBEADC0010186B /* first@2x.png in Resources */,
+				0FC83AC318CBEADC0010186B /* second.png in Resources */,
+				0FC83AC418CBEADC0010186B /* second@2x.png in Resources */,
+				0F2819A118D11231004F4910 /* ARMainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +289,17 @@
 			files = (
 				0FC83A8E18CBE1340010186B /* main.m in Sources */,
 				0FC83A9218CBE1340010186B /* AppDelegate.m in Sources */,
+				0FC83AB018CBE35B0010186B /* MapView2Controller.m in Sources */,
+				0FC83AB418CBE4670010186B /* MapPoint.m in Sources */,
+				0FC83AB718CBE4760010186B /* LocalDB.m in Sources */,
+				0FC83ABB18CBE5360010186B /* EditDataViewController.m in Sources */,
+				0F2819A018D11231004F4910 /* ARMainViewController.m in Sources */,
+				0F2819AF18D114A4004F4910 /* ARCoordinate.m in Sources */,
+				0F2819B018D114A4004F4910 /* ARGeoCoordinate.m in Sources */,
+				0F2819B118D114A4004F4910 /* ARKit.m in Sources */,
+				0F2819B218D114A4004F4910 /* AugmentedRealityController.m in Sources */,
+				0F2819B318D114A4004F4910 /* GEOLocations.m in Sources */,
+				0F2819E918D12379004F4910 /* MarkerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +342,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -232,7 +366,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -242,9 +376,14 @@
 		0FC83A9C18CBE1340010186B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Downloads/aws-ios-sdk-1.7.1\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Salespod2/Salespod2-Prefix.pch";
 				INFOPLIST_FILE = "Salespod2/Salespod2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -253,9 +392,14 @@
 		0FC83A9D18CBE1340010186B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Downloads/aws-ios-sdk-1.7.1\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Salespod2/Salespod2-Prefix.pch";
 				INFOPLIST_FILE = "Salespod2/Salespod2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -280,6 +424,7 @@
 				0FC83A9D18CBE1340010186B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
