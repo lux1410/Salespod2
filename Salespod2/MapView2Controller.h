@@ -23,6 +23,7 @@
 {
     CLLocationManager *locationManager;
     CLLocationCoordinate2D currentCentre;
+    CLLocation* currLocation;
     int currenDist;
     BOOL firstLaunch;
     BOOL queryDone;

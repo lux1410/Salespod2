@@ -113,7 +113,7 @@
 
 -(void)queryGooglePlaces:(NSString *) googleType aroundLocation:(CLLocation*)curLocation{
     
-       
+    currLocation=curLocation;
     
     NSString *url=[NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/search/json?location=%f,%f&radius=%i&sensor=true&key=%@", curLocation.coordinate.latitude, curLocation.coordinate.longitude, 1000, kGOOGLE_API_KEY];
     
@@ -152,8 +152,12 @@
     }
     else
     {
-        [self showAlertMessage:@"Faild to get Google data!" withTitle:@"Error"];
+        
+        [self plotPositions:nil];
 
+        //[self showAlertMessage:@"Faild to get Google data!" withTitle:@"Error"];
+        
+        
     }
 }
 
@@ -168,7 +172,8 @@
     }
     
     
-   
+   if (data)
+   {
     
     for (int i=0; i<[data count]; i++) {
         
@@ -202,7 +207,17 @@
         
         
     }
-    
+   }
+    else
+    {
+      NSMutableArray* arr=[[LocalDB LocalDatabase] getPlacesFromDB:currLocation];
+        
+        
+        for (MapPoint* placeObject in arr) {
+            [self.mapView addAnnotation:placeObject];
+        }
+        
+    }
     
 }
 
@@ -429,10 +444,7 @@
     
     [alert show];
     
-    //[self processGrandCentralDispatchUpload:imageData];
-    
-    //[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
-    
+      
     
 }
 

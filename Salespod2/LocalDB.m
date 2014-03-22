@@ -108,6 +108,62 @@ static LocalDB* _db;
     
 }
 
+-(NSMutableArray*)getPlacesFromDB:(CLLocation*)currentLocation{
+    
+    sqlite3_stmt *stmt;
+        
+    const char* aQuery="SELECT ID,NAME,ADDRESS,LAT,LNG FROM PLACES";
+    
+    if (sqlite3_prepare_v2(_database, aQuery, -1, &stmt, nil)
+        == SQLITE_OK)
+    {
+        
+        NSMutableArray* rez=[NSMutableArray new];
+        
+        while (sqlite3_step(stmt) == SQLITE_ROW)
+        {
+            char* cID=(char *) sqlite3_column_text(stmt, 0);
+            char* name = (char *) sqlite3_column_text(stmt, 1);
+            char* addr=(char *) sqlite3_column_text(stmt, 2);
+            double lat=sqlite3_column_double(stmt,3);
+            double lng=sqlite3_column_double(stmt,4);
+            
+            CLLocation *pinLocation = [[CLLocation alloc]
+                                       initWithLatitude:lat
+                                       longitude:lng];
+            
+            
+            
+            CLLocationDistance distance = [pinLocation distanceFromLocation:currentLocation];
+            
+            if (distance<=1000) {
+                
+                NSString* sID=[[NSString alloc] initWithUTF8String:cID];
+                NSString* sName=[[NSString alloc] initWithUTF8String:name];
+                NSString* sAddress=[[NSString alloc] initWithUTF8String:addr];
+                CLLocationCoordinate2D placeCoord;
+                
+                placeCoord.latitude=lat;
+                placeCoord.longitude=lng;
+                
+                MapPoint* placeObject=[[MapPoint alloc] initWithName:sName address:sAddress coordinate:placeCoord aId:sID ];
+                
+                [rez addObject:placeObject];
+                
+            }
+            
+            
+            
+        
+        }
+        
+        sqlite3_finalize(stmt);
+        return rez;
+    }
+    
+    return nil;
+}
+
 -(int)insertRecord:(MapPoint*)aRecord{
     
     sqlite3_stmt *stmt;

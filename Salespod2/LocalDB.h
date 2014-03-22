@@ -19,6 +19,7 @@
 + (LocalDB*)LocalDatabase;
 -(int)updateRecord:(MapPoint*)aRecord;
 -(int)insertRecord:(MapPoint*)aRecord;
+-(NSMutableArray*)getPlacesFromDB:(CLLocation*)currentLocation;
 //- (NSArray *)failedBankInfos;
 
 @end
